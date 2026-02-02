@@ -1,6 +1,6 @@
 # MyFinance 
 <div align="center">
-  <img src="" alt="MyFianance_README_img" width="400" height="900">
+  <img src="https://github.com/user-attachments/assets/f66eb1b2-f724-4a68-949b-9d50d6b9e4fa" alt="MyFianance_README_img" width="1100" height="900">
 </div>
 
 # ℹ️Repository Info 
