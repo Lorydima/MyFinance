@@ -1,0 +1,17 @@
+[project]
+name = "MyFinance"
+version = "1.0"
+description = "MyFinance is a finance manager on CLI"
+authors = [{name = "LDM Dev"}]
+license = {text = "MIT"}
+dependencies = ["pyfiglet", "rich", "numpy"]
+
+[project.urls]
+Repository = "https://github.com/Lorydima/MyFinance"
+
+[tool.setuptools]
+packages = ["Src"]
+
+[build-system]
+requires = ["setuptools", "wheel"]
+build-backend = "setuptools.build_meta"
