@@ -5,7 +5,7 @@
 Currently, only the latest version of this project is supported with security updates.
 
 # Virus Total Report
-<a href="">Click Here for watch the report on the EXE file</a>
+<a href="https://www.virustotal.com/gui/file/07ae57cb59537a4e5f4a5e044dd3cd2a7138e252699d8beb9a6d999e395dfcdf">Click Here for watch the report on the EXE file</a>
 
 ## Reporting a Vulnerability
 
