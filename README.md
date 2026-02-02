@@ -28,7 +28,7 @@ MyFinance includes:
 
 # 💾Downolad MyFinance 
 To donwload MyFinance V1.0 follow this link, the software is for **Windows OS, for linux use Wine:**
-<a href="" download>Download MyFinance V1.0</a>
+<a href="https://github.com/Lorydima/MyFinance/releases/download/MyFinanceV1.0/MyFinance_V1.0.zip" download>Download MyFinance V1.0</a>
 
 **For macOS**  
 The EXE file is not available.
@@ -48,7 +48,7 @@ provided that Python and the required dependencies are installed.
 >    or add the executable to your antivirus allow-list, if you trust the source
 >  No network access, telemetry, or background processes are used by this application.
 > - **Important:**  
->   **Do not delete the `.json` file in the download folder they are required for the program to function correctly.
+>   **Do not delete** the `.json` file in the download folder they are required for the program to function correctly.
 
 # 🔗Clone Repository
 ```bash
@@ -62,4 +62,4 @@ Your feedback really helps me improve the project.
 Thanks for contributing and helping make this project better from *LDM Dev*❤️ 
 
 # 📄License 
-Before you use the software please read the **MIT License** license at this link: <a href="https://github.com/Lorydima/PyCalcPro?tab=License-1-ov-file#">License</a>
+Before you use the software please read the **MIT License** license at this link: <a href="https://github.com/Lorydima/MyFinance?tab=License-1-ov-file#">License</a>
