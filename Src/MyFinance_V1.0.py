@@ -6,6 +6,8 @@ MyFinance>_ is a finance manager on CLI
 Git Hub Repository Link: "https://github.com/Lorydima/MyFinance"
 
 Before you use this code read the license in the LICENSE.txt or on Git Hub Repository.
+
+If you discover a security vulnerability please read the file SECURITY.md on the Git Hub Repository.
 '''
 
 # Library for App Dev.
