@@ -1,10 +1,10 @@
 [project]
 name = "MyFinance"
-version = "1.0"
+version = "2.0"
 description = "MyFinance is a finance manager on CLI"
 authors = [{name = "LDM Dev"}]
 license = {text = "MIT"}
-dependencies = ["pyfiglet", "rich", "numpy"]
+dependencies = ["pyfiglet", "rich", "numpy", "matplotlib"]
 
 [project.urls]
 Repository = "https://github.com/Lorydima/MyFinance"

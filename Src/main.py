@@ -1,4 +1,4 @@
-# MyFinance>_ Source Code Date 02/02/2026 Dev: LDM Dev
+# MyFinance>_ Source Code Date 15/03/2026 Dev: LDM Dev
 
 '''
 MyFinance>_ is a finance manager on CLI
@@ -19,6 +19,7 @@ from rich.console import Console
 from rich.table import Table
 from datetime import datetime
 from rich import print
+import matplotlib.pyplot as plt
 import numpy
 import json
 import os
@@ -28,6 +29,16 @@ console = Console()
 
 # Global Data
 finance_data = {}
+
+# Helper Date Parser
+def parse_date(date_str):
+    """Safely parses dates checking for different formats."""
+    for fmt in ("%d/%m/%y", "%d/%m/%Y", "%Y-%m-%d"):
+        try:
+            return datetime.strptime(date_str, fmt)
+        except ValueError:
+            continue
+    return datetime.min
 
 # Load Data Function
 def load_data():
@@ -53,6 +64,14 @@ def load_data():
                     elif transaction.get("type") == "exit":
                         transaction["type"] = "expense"
                         migrated = True
+                    
+                    if "date" in transaction:
+                        dt = parse_date(transaction["date"])
+                        if dt != datetime.min:
+                            new_date_str = dt.strftime("%d/%m/%y")
+                            if transaction["date"] != new_date_str:
+                                transaction["date"] = new_date_str
+                                migrated = True
                 
                 finance_data = data
                 
@@ -69,7 +88,7 @@ def introduction():
     """Displays the application's title, version, and developer info."""
     f = Figlet(font='standard')
     introduction_title = f.renderText("My Finance >_")
-    info_text = "V1.0 Date 02/12/2026 Dev: LDM Dev"
+    info_text = "V2.0 Date 15/03/2026 Dev: LDM Dev"
 
     title = Align.center(f"[green]{introduction_title}[/green]")
     subtitle = Align.center(f"[bold blue]{info_text}[/bold blue]")
@@ -88,6 +107,7 @@ def command_panel():
             "\n[bold][blue]View Balance[/blue][/bold]"
             "\n[yellow][bold]View all transactions[/yellow][/bold]"
             "\n[bold][cyan]Change Currency[/cyan][/bold]"
+            "\n[bold purple]View Graphs[/bold purple]"
             "\n[red]Exit[/red]",
             title="Commands",
             style="green"
@@ -202,14 +222,20 @@ def add_transaction(transaction_type: str):
         except ValueError:
             print("[red]   Invalid amount. Please enter a number (e.g., 50.25).[/red]")
 
-    today_str = datetime.now().strftime('%Y-%m-%d')
+    today_str = datetime.now().strftime('%d/%m/%y')
     date_str = console.input(f"   [white]Date [default: {today_str}]: [/white]")
     if not date_str:
         date_str = today_str
+    else:
+        try:
+            datetime.strptime(date_str, '%d/%m/%y')
+        except ValueError:
+            print("[red]   Invalid date format. Using today's date.[/red]")
+            date_str = today_str
 
     new_transaction = {"type": transaction_type, "amount": amount, "description": description, "date": date_str}
     finance_data["transactions"].append(new_transaction)
-    finance_data["transactions"].sort(key=lambda x: x['date'], reverse=True)
+    finance_data["transactions"].sort(key=lambda x: parse_date(x['date']), reverse=True)
     save_data()
 
     success_message = f"[bold {color}]New {transaction_type} added successfully![/bold {color}]"
@@ -240,6 +266,49 @@ def change_currency():
         else:
             console.print("[red]   Invalid choice. Please select 1, 2, or 3.[/red]")
 
+# View Graphs
+def view_graphs():
+    """Displays a line graph of balance history over time using matplotlib."""
+    console.print(Rule("[bold purple]View Graphs[/bold purple]", style="purple"))
+    transactions = finance_data.get("transactions", [])
+
+    if not transactions:
+        console.print(Align.center("[yellow]No data saved[/yellow]"))
+        console.print(Rule(style="white"))
+        return
+
+    # Sort transactions chronologically
+    sorted_transactions = sorted(transactions, key=lambda x: parse_date(x["date"]))
+
+    dates = []
+    balances = []
+    current_balance = 0.0
+
+    for t in sorted_transactions:
+        amount = float(t["amount"])
+        if t["type"] == "expense":
+            current_balance -= amount
+        else:
+            current_balance += amount
+        
+        dates.append(t["date"])
+        balances.append(current_balance)
+
+    currency_symbol = finance_data.get("currency", "€")
+
+    plt.figure(figsize=(10, 5))
+    plt.plot(dates, balances, marker='o', linestyle='-', color='green')
+    plt.title('Balance Variation')
+    plt.xlabel('Date')
+    plt.ylabel(f'Balance ({currency_symbol})')
+    plt.xticks(rotation=45)
+    plt.grid(True)
+    plt.tight_layout()
+    plt.show()
+
+    console.print(Align.center("[bold purple]Graph displayed![/bold purple]"))
+    console.print(Rule(style="white"))
+
 # Command Loop
 def command_loop():
     """The main loop that waits for user commands and executes the corresponding functions."""
@@ -260,6 +329,9 @@ def command_loop():
 
         elif user_input == "change currency":
             change_currency()
+
+        elif user_input == "view graphs":
+            view_graphs()
 
         elif user_input == "exit":
             exit()

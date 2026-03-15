@@ -25,9 +25,10 @@ MyFinance includes:
 - Command user-friendly
 - Simple insertion of incomes or expensives
 - Simple wiew of own finances
+- View Graph Function
 
 # 💾Downolad MyFinance 
-To donwload MyFinance V1.0 follow this link, the software is for **Windows OS, for linux use Wine:**
+To donwload MyFinance V2.0 follow this link, the software is for **Windows OS, for linux use Wine:**
 <a href="https://github.com/Lorydima/MyFinance/releases/download/MyFinanceV1.0/MyFinance_V1.0.zip" download>Download MyFinance V1.0</a>
 
 **For macOS**  
@@ -44,6 +45,12 @@ provided that Python and the required dependencies are installed.
 # 🔗Clone Repository
 ```bash
 git clone https://github.com/Lorydima/MyFinance.git
+```
+```bash
+pip install -r requirements.txt
+```
+```bash
+run main.py
 ```
 # 🛠️Bug reports and issue
 I do my best to keep this project stable and reliable, but bugs can still happen.
