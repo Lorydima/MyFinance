@@ -1,6 +1,6 @@
 # MyFinance 
 <div align="center">
-  <img src="https://github.com/user-attachments/assets/f66eb1b2-f724-4a68-949b-9d50d6b9e4fa" alt="MyFianance_README_img" width="1100" height="900">
+  <img src="" alt="MyFianance_README_img" width="1100" height="900">
 </div>
 
 # ℹ️Repository Info 
@@ -29,7 +29,7 @@ MyFinance includes:
 
 # 💾Downolad MyFinance 
 To donwload MyFinance V2.0 follow this link, the software is for **Windows OS, for linux use Wine:**
-<a href="https://github.com/Lorydima/MyFinance/releases/download/MyFinanceV1.0/MyFinance_V1.0.zip" download>Download MyFinance V1.0</a>
+<a href="https://github.com/Lorydima/MyFinance/releases/download/MyFinanceV2.0/MyFinance_V2.0.zip" download>Download MyFinance V2.0</a>
 
 **For macOS**  
 The EXE file is not available.
