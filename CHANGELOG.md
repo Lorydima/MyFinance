@@ -3,14 +3,6 @@
 All notable changes to this project will be documented in this file.
 This project uses semantic versioning.
 
-## [Unreleased]
-### Changed
-- Split the GUI script into reusable modules under `Src/myfinance/` for configuration, storage, and Tkinter window logic.
-- Kept `Src/main.py` as the thin application entry point so the program remains easy to launch from source.
-
-### Added
-- Inline docstrings and targeted comments around the app flow, modal dialogs, and persistence helpers.
-
 ## [3.0.0] - 06/06/2026
 ### Added
 - Tkinter GUI workflow with buttons for incomes, expenses, transaction history, graphs, credits, and currency changes.
