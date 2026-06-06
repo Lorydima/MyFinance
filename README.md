@@ -18,16 +18,14 @@
 ![Contributions welcome](https://img.shields.io/badge/contributions-welcome-green)
 ![License: MIT](https://img.shields.io/badge/license-MIT-blue)
 
-# 🎲Features
+# 🎲 Features
 
-MyFinance includes:
-- Simple GUI
-- Simple insertion of incomes or expensives
-- Simple wiew of own finances
-- View Graph Function
+| Img | Feature Description |
+|:---:|-------------------|
+| <img src="https://lorydima.github.io/MyFinance/MyFInance_README02.png" width="600"> | **Graph functions:** This function allows you to generate visual charts of your balance over time, helping you analyze your financial growth and spending patterns. |
+| <img src="https://lorydima.github.io/MyFinance/MyFinance_README03.png" width="600"> | **Transaction table:** This function displays a full historical record of your incomes and expenses in an organized table, allowing for easy data management and review. |
 
-# Project Structure
-
+# 📁 Project Structure
 ```text
 MyFinance/
 ├── Src/                             # Desktop app source code
@@ -55,6 +53,10 @@ Assets (icons and data files) are stored inside so the application can find them
 
 **About the docs/ folder:**
 The docs/ folder contains files used for the source code of website. It is not required to run the application locally.
+
+# 🌐 MindCLI Website
+<img src="https://github.com/user-attachments/assets/4a77bc29-1c68-4069-beb4-141631ab5b19" alt="MindCLI_Website_Img" width="1200">
+You can access the MindCLI Website from this link: <a href="https://lorydima.github.io/MyFinance" target="_blank">MyFinance Website</a>
 
 # 💾Downolad MyFinance 
 To donwload MyFinance V3.0 follow this link, the software is for **Windows OS, for linux use Wine:**
