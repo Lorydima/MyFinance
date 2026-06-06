@@ -50,6 +50,12 @@ MyFinance/
 └── requirements.txt                 # Python dependencies
 ```
 
+**About assets:**
+Assets (icons and data files) are stored inside so the application can find them when run from source or packaged.
+
+**About the docs/ folder:**
+The docs/ folder contains files used for the source code of website. It is not required to run the application locally.
+
 # 💾Downolad MyFinance 
 To donwload MyFinance V3.0 follow this link, the software is for **Windows OS, for linux use Wine:**
 <a href="" download>Download MyFinance V3.0</a>
