@@ -39,11 +39,6 @@ MyFinance/
 │   ├── main.py                      # Application entry point
 │   └── storage.py                   # JSON loading, saving, and data migration
 ├── Website/
-│   ├── MyFInance_README01.png       # Screenshot for the hero section
-│   ├── MyFInance_README02.png       # Screenshot for the feature section
-│   ├── MyFinance_Logo.ico           # Website favicon
-│   ├── MyFinance_Logo.png           # Website logo image
-│   ├── MyFinance_README03.png       # Screenshot for the lower section
 │   ├── index.html                   # Website home page
 │   └── style.css                    # Website styling
 ├── CHANGELOG.md                     # Version history
