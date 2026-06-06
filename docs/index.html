@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="MyFinance Website">
+    <meta name="keywords" content="MyFinance Website">
+    <meta name="author" content="LDM Dev.">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/x-icon" href="MyFinance_Logo.ico">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <title>MyFinance Website</title>
+</head>
+<body>
+
+    <article>
+        <nav class="navbar navbar-expand-lg custom-green-navbar sticky-top">
+            <div class="container">
+                <a class="navbar-brand d-flex align-items-center" href="index.html">
+                    <img src="MyFinance_Logo.png" alt="MyFinance_Logo" class="img-fluid">
+                    <span class="ms-2 text-white fw-bold">MyFinance</span>
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item">
+                            <p class="nav-link mb-0 text-white fw-bold">Version 3.0</p>
+                        </li>
+                        <li class="nav-item">
+                            <center>
+                                <a class="btn github-black-btn ms-3 align-text-bottom" href="https://github.com/Lorydima/MyFinance" target="_blank">
+                                    <i class="fab fa-github me-2"></i> GitHub Repository
+                                </a>
+                            </center>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <div class="hero-text">
+            <h1><strong><span>MyFinance</span></strong></h1>
+            <p>Finance manager with a simple <br>and intuitive GUI</p>
+            <a href="https://lorydima.github.io/ldmdevwebsite/" target="_blank">Developed by LDM Dev</a>
+        </div>
+        <div class="d-flex justify-content-end">
+            <img src="MyFInance_README01.png" class="img-fluid hero-img" alt="MyFinance_README_Img">
+        </div>
+        <hr>
+    </article>
+
+    <div class="card">
+        <div class="card-content">
+            <img src="MyFInance_README02.png" alt="Transaction Management" class="card-image">
+            <div class="card-text-container">
+                <h1 class="card-title-text">Graph functions</h1>
+                <p class="card-description-text">
+                    This function allows you to generate visual charts of your balance over time, helping you analyze your financial growth and spending patterns.
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <div class="card">
+        <div class="card-content">
+            <img src="MyFinance_README03.png" alt="Visual History" class="card-image2">
+            <div class="card-text-container">
+                <h1 class="card-title-text">Transaction table</h1>
+                <p class="card-description-text">
+                    This function displays a full historical record of your incomes and expenses in an organized table, allowing for easy data management and review.
+                </p>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="card download-card">
+        <div class="card-content d-flex flex-column align-items-center text-center w-100">
+            <h1 class="download-title">Download <span class="text-green">MyFinance</span></h1>
+            
+            <a id="download-btn" href="https://github.com/Lorydima/MyFinance/releases/download/v3.0/MyFinance_V3.0.zip" download class="premium-download-btn">
+                <div class="btn-icon">
+                    <i class="fas fa-download"></i>
+                </div>
+                <div class="btn-text">
+                    <span class="main-text">Download Now</span>
+                    <span class="sub-text">v3.0</span>
+                </div>
+            </a>
+
+            <div class="download-meta mt-4">
+                <p class="release-date">Release Date: 06/06/2026</p>
+                <div class="os-info mt-3">
+                    <p><i class="fab fa-windows"></i> Windows OS</p>
+                    <p><i class="fab fa-linux"></i> Linux (use Wine)</p>
+                    <p><i class="fab fa-apple"></i> macOS (Run from source via GitHub)</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        (function(){
+            const btn = document.getElementById('download-btn');
+            if (!btn) return;
+            const message = "Thanks for downloading MyFinance!\n\nImportant: Do not delete the DATA.json or .ico files in the application directory. They are required for the program to function correctly.";
+
+            function notifyBrowser() {
+                if (!('Notification' in window)) return;
+                if (Notification.permission === 'granted') {
+                    new Notification('MyFinance — Download info', { body: message });
+                } else if (Notification.permission !== 'denied') {
+                    Notification.requestPermission().then(function(permission){
+                        if (permission === 'granted') new Notification('MyFinance — Download info', { body: message });
+                    });
+                }
+            }
+
+            btn.addEventListener('click', function(e){
+                e.preventDefault();
+                notifyBrowser();
+                alert(message);
+                const href = this.href;
+                setTimeout(function(){ window.location.href = href; }, 150);
+            });
+        })();
+    </script>
+
+<div class="card">
+        <h1 class="license-title">MyFinance<span> License</span></h1>
+        <div class="license-box">
+            <pre class="license-pre">MIT License
+
+Copyright (c) 2026 LDM Dev
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.</pre>
+        </div>
+    </div>
+
+    <hr class="license-hr">
+
+    <footer class="custom-white-footer">
+        <div class="footer-left">
+            <img src="MyFinance_Logo.png" alt="MyFinance_Icon" class="footer-logo">
+            <p class="footer-title"><strong>MyFinance</strong></p>
+        </div>
+        <div class="footer-center">
+            <p class="footer-version"><strong>Version 3.0</strong></p>
+        </div>
+        <div class="footer-right">
+            <a href="https://github.com/Lorydima" class="footer-dev" target="_blank" rel="noopener">Developed by LDM Dev</a>
+        </div>
+    </footer>
+
+    <hr>
+    <div class="Website-info">
+
+        <p class="website-info-text">Icons used in this project are provided by <a href="https://fontawesome.com" target="_blank" class="website-info-link">Font Awesome</a>.</p>
+                <p class="website-info-text">
+            This website is hosted on <a href="https://pages.github.com/" target="_blank" style="text-decoration:underline;">GitHub Pages</a>.
+        </p>
+    </div>
+            <script>
+        (function(){
+            const btn = document.getElementById('download-btn');
+            if (!btn) return;
+            const message = "Important: Do not delete the DATA.json or .ico files. They are required for the program to function correctly.";
+
+            function notifyBrowser() {
+                if (!('Notification' in window)) return;
+                if (Notification.permission === 'granted') {
+                    new Notification('MyFinance — Download info', { body: message });
+                } else if (Notification.permission !== 'denied') {
+                    Notification.requestPermission().then(function(permission){
+                        if (permission === 'granted') new Notification('MyFinance — Download info', { body: message });
+                    });
+                }
+            }
+
+            btn.addEventListener('click', function(e){
+                e.preventDefault();
+                notifyBrowser();
+                alert(message);
+                const href = this.href;
+                setTimeout(function(){ window.location.href = href; }, 150);
+            });
+        })();
+        </script>
+</body>
+</html>

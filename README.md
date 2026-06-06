@@ -4,7 +4,7 @@
 </div>
 
 # ℹ️Repository Info 
-![GitHub stars](https://img.shields.io/github/stars/Lorydima/PyCalcPro?color=gold)
+![GitHub stars](https://img.shields.io/github/stars/Lorydima/MyFinance?color=gold)
 ![GitHub repo size](https://img.shields.io/github/repo-size/Lorydima/MyFinance?color=red)
 ![Platform: Windows](https://img.shields.io/badge/platform-windows-blue)
 ![Platform: Linux via Wine](https://img.shields.io/badge/linux%20via%20wine-red?)
@@ -21,15 +21,43 @@
 # 🎲Features
 
 MyFinance includes:
-- Simple CLI
-- Command user-friendly
+- Simple GUI
 - Simple insertion of incomes or expensives
 - Simple wiew of own finances
 - View Graph Function
 
+# Project Structure
+
+```text
+MyFinance/
+├── Src/                             # Desktop app source code
+│   ├── Assets/                      # Application data and icon files
+│   │   ├── DATA.json                # Saved transactions and currency
+│   │   └── MyFinance_Logo.ico       # App icon used by the GUI
+│   ├── app.py                       # GUI windows, dialogs, and charts
+│   ├── config.py                    # Shared paths, colors, fonts, and version values
+│   ├── main.py                      # Application entry point
+│   └── storage.py                   # JSON loading, saving, and data migration
+├── Website/
+│   ├── MyFInance_README01.png       # Screenshot for the hero section
+│   ├── MyFInance_README02.png       # Screenshot for the feature section
+│   ├── MyFinance_Logo.ico           # Website favicon
+│   ├── MyFinance_Logo.png           # Website logo image
+│   ├── MyFinance_README03.png       # Screenshot for the lower section
+│   ├── index.html                   # Website home page
+│   └── style.css                    # Website styling
+├── CHANGELOG.md                     # Version history
+├── CONTRIBUTING.md                  # Contribution guide
+├── LICENSE.txt                      # MIT license text
+├── README.md                        # Project overview
+├── SECURITY.md                      # Security policy
+├── pyproject.toml                   # Packaging metadata
+└── requirements.txt                 # Python dependencies
+```
+
 # 💾Downolad MyFinance 
-To donwload MyFinance V2.0 follow this link, the software is for **Windows OS, for linux use Wine:**
-<a href="https://github.com/Lorydima/MyFinance/releases/download/MyFinanceV2.0/MyFinance_V2.0.zip" download>Download MyFinance V2.0</a>
+To donwload MyFinance V3.0 follow this link, the software is for **Windows OS, for linux use Wine:**
+<a href="" download>Download MyFinance V3.0</a>
 
 **For macOS**  
 The EXE file is not available.

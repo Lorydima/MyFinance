@@ -1,17 +1,30 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
 [project]
-name = "MyFinance"
-version = "2.0"
-description = "MyFinance is a finance manager on CLI"
-authors = [{name = "LDM Dev"}]
-license = {text = "MIT"}
-dependencies = ["pyfiglet", "rich", "numpy", "matplotlib"]
+name = "myfinance"
+version = "3.0.0"
+description = "MyFinance is a finance manager with a simple GUI"
+readme = "README.md"
+authors = [{ name = "LDM Dev" }]
+license = { text = "MIT" }
+requires-python = ">=3.10"
+dependencies = ["matplotlib", "numpy"]
+keywords = ["finance", "gui", "budget", "personal-finance", "tkinter"]
+classifiers = [
+  "License :: OSI Approved :: MIT License",
+  "Programming Language :: Python :: 3",
+  "Operating System :: OS Independent",
+]
 
 [project.urls]
 Repository = "https://github.com/Lorydima/MyFinance"
 
 [tool.setuptools]
-packages = ["Src"]
+package-dir = { "" = "Src" }
+py-modules = ["main"]
 
-[build-system]
-requires = ["setuptools", "wheel"]
-build-backend = "setuptools.build_meta"
+[tool.setuptools.packages.find]
+where = ["Src"]
+include = ["myfinance*"]
