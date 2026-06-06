@@ -60,7 +60,7 @@ You can access the MindCLI Website from this link: <a href="https://lorydima.git
 
 # 💾Downolad MyFinance 
 To donwload MyFinance V3.0 follow this link, the software is for **Windows OS, for linux use Wine:**
-<a href="" download>Download MyFinance V3.0</a>
+<a href="https://github.com/Lorydima/MyFinance/releases/download/MyFinanceV3.0/MyFinance_V3.0.zip" download>Download MyFinance V3.0</a>
 
 **For macOS**  
 The EXE file is not available.
