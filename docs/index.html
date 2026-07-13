@@ -102,32 +102,6 @@
         </div>
     </div>
 
-    <script>
-        (function(){
-            const btn = document.getElementById('download-btn');
-            if (!btn) return;
-            const message = "Thanks for downloading MyFinance!\n\nImportant: Do not delete the DATA.json or .ico files in the application directory. They are required for the program to function correctly.";
-
-            function notifyBrowser() {
-                if (!('Notification' in window)) return;
-                if (Notification.permission === 'granted') {
-                    new Notification('MyFinance — Download info', { body: message });
-                } else if (Notification.permission !== 'denied') {
-                    Notification.requestPermission().then(function(permission){
-                        if (permission === 'granted') new Notification('MyFinance — Download info', { body: message });
-                    });
-                }
-            }
-
-            btn.addEventListener('click', function(e){
-                e.preventDefault();
-                notifyBrowser();
-                alert(message);
-                const href = this.href;
-                setTimeout(function(){ window.location.href = href; }, 150);
-            });
-        })();
-    </script>
 
 <div class="card">
         <h1 class="license-title">MyFinance<span> License</span></h1>
@@ -179,31 +153,6 @@ SOFTWARE.</pre>
             This website is hosted on <a href="https://pages.github.com/" target="_blank" style="text-decoration:underline;">GitHub Pages</a>.
         </p>
     </div>
-            <script>
-        (function(){
-            const btn = document.getElementById('download-btn');
-            if (!btn) return;
-            const message = "Important: Do not delete the DATA.json or .ico files. They are required for the program to function correctly.";
 
-            function notifyBrowser() {
-                if (!('Notification' in window)) return;
-                if (Notification.permission === 'granted') {
-                    new Notification('MyFinance — Download info', { body: message });
-                } else if (Notification.permission !== 'denied') {
-                    Notification.requestPermission().then(function(permission){
-                        if (permission === 'granted') new Notification('MyFinance — Download info', { body: message });
-                    });
-                }
-            }
-
-            btn.addEventListener('click', function(e){
-                e.preventDefault();
-                notifyBrowser();
-                alert(message);
-                const href = this.href;
-                setTimeout(function(){ window.location.href = href; }, 150);
-            });
-        })();
-        </script>
 </body>
 </html>

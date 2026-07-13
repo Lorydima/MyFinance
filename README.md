@@ -1,9 +1,11 @@
-# MyFinance 
+# MyFinance
+
 <div align="center">
   <img src="https://lorydima.github.io/MyFinance/MyFInance_README01.png" alt="MyFianance_README_img" width="1100" height="650">
 </div>
 
-# ℹ️Repository Info 
+# ℹ️Repository Info
+
 ![GitHub stars](https://img.shields.io/github/stars/Lorydima/MyFinance?color=gold)
 ![GitHub repo size](https://img.shields.io/github/repo-size/Lorydima/MyFinance?color=red)
 ![Platform: Windows](https://img.shields.io/badge/platform-windows-blue)
@@ -26,6 +28,7 @@
 | <img src="https://lorydima.github.io/MyFinance/MyFinance_README03.png" width="600"> | **Transaction table:** This function displays a full historical record of your incomes and expenses in an organized table, allowing for easy data management and review. |
 
 # 📁 Project Structure
+
 ```text
 MyFinance/
 ├── Src/                             # Desktop app source code
@@ -55,40 +58,43 @@ Assets (icons and data files) are stored inside so the application can find them
 The docs/ folder contains files used for the source code of website. It is not required to run the application locally.
 
 # 🌐 MindCLI Website
+
 <img src="https://github.com/user-attachments/assets/4a77bc29-1c68-4069-beb4-141631ab5b19" alt="MindCLI_Website_Img" width="1200">
 You can access the MindCLI Website from this link: <a href="https://lorydima.github.io/MyFinance" target="_blank">MyFinance Website</a>
 
-# 💾Downolad MyFinance 
+# 💾Downolad MyFinance
+
 To donwload MyFinance V3.0 follow this link, the software is for **Windows OS, for linux use Wine:**
 <a href="https://github.com/Lorydima/MyFinance/releases/download/MyFinanceV3.0/MyFinance_V3.0.zip" download>Download MyFinance V3.0</a>
 
 **For macOS**  
-The EXE file is not available.
+The `.app` file is not available.
 
 However, the application can be run from source by executing the `main.py` file,
 provided that Python and the required dependencies are installed.
 
-> [!WARNING]
-> **For proper program execution, please read the notes below**
-> 
->   **Do not delete** the `.json` file in the download folder they are required for the program to function correctly.
-
 # 🔗Clone Repository
+
 ```bash
 git clone https://github.com/Lorydima/MyFinance.git
 ```
+
 ```bash
 pip install -r requirements.txt
 ```
+
 ```bash
 run main.py
 ```
+
 # 🛠️Bug reports and issue
+
 I do my best to keep this project stable and reliable, but bugs can still happen.
 If you spot any issues or errors, feel free to open a GitHub issue.
 Your feedback really helps me improve the project.
 
-Thanks for contributing and helping make this project better from *LDM Dev*❤️ 
+Thanks for contributing and helping make this project better from *LDM Dev*❤️
 
-# 📄License 
+# 📄License
+
 Before you use the software please read the **MIT License** license at this link: <a href="https://github.com/Lorydima/MyFinance?tab=License-1-ov-file#">License</a>
