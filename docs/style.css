@@ -215,6 +215,33 @@ hr {
     text-align: center;
 }
 
+.virustotal-link {
+    text-align: center;
+}
+
+.virustotal-link a {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    background-color: #27ae60;
+    color: #ffffff !important;
+    padding: 10px 22px;
+    border-radius: 12px;
+    text-decoration: none !important;
+    font-size: 1.1rem;
+    font-weight: 500;
+    box-shadow: 0 4px 12px rgba(39, 174, 96, 0.3);
+    transition: all 0.2s ease-in-out;
+}
+
+.virustotal-link a:hover {
+    background-color: #219150;
+    color: #ffffff !important;
+    transform: translateY(-2px);
+    box-shadow: 0 6px 15px rgba(39, 174, 96, 0.4);
+}
+
 .download-warnings-box {
     border-top: 1px solid rgba(255, 255, 255, 0.1);
     padding-top: 20px;

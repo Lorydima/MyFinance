@@ -1,29 +1,27 @@
-# MyFinance
-
 <div align="center">
-  <img src="https://lorydima.github.io/MyFinance/MyFInance_README01.png" alt="MyFianance_README_img" width="1100" height="650">
+  <h1>MyFinance </h1>
+  <img src="docs/MyFinance_Logo.png" alt="PyCalc Pro Logo" width="200">
+  <br>
+  <img src="https://img.shields.io/github/stars/Lorydima/MyFinance?color=gold" alt="GitHub stars">
+  <img src="https://img.shields.io/badge/platforms-Windows%20%7C%20Linux%20via%20Wine or main.py%20%7C%20macOS%20via%20main.py-red" alt="Platforms">
+  <img src="https://img.shields.io/badge/contributions-welcome-green" alt="Contributions welcome">
+  <img src="https://img.shields.io/badge/license-MIT-blue" alt="License: MIT">
+  <br>
+
 </div>
 
-# ℹ️Repository Info
+<div align="center">
+  <a href="https://lorydima.github.io/MyFinance/" target="_blank" style="font-size: 30px; font-weight: bold;">Website</a>
+</div>
 
-![GitHub stars](https://img.shields.io/github/stars/Lorydima/MyFinance?color=gold)
-![GitHub repo size](https://img.shields.io/github/repo-size/Lorydima/MyFinance?color=red)
-![Platform: Windows](https://img.shields.io/badge/platform-windows-blue)
-![Platform: Linux via Wine](https://img.shields.io/badge/linux%20via%20wine-red?)
-![macOS Support](https://img.shields.io/badge/macos%20via%20main.py-lightblue?)
-
-![GitHub last commit](https://img.shields.io/github/last-commit/Lorydima/MyFinance?color=lightblue)
-![GitHub version](https://img.shields.io/github/v/release/Lorydima/MyFinance?color=blueviolet)
-![GitHub Pull Requests](https://img.shields.io/github/issues-pr/Lorydima/MyFinance?color=purple)
-![GitHub Issues](https://img.shields.io/github/issues/Lorydima/MyFinance?color=purple)
-
-![Contributions welcome](https://img.shields.io/badge/contributions-welcome-green)
-![License: MIT](https://img.shields.io/badge/license-MIT-blue)
+<br>
+<p align="center"><strong>GUI App for finance managment</strong></p>
 
 # 🎲 Features
 
 | Img | Feature Description |
 |:---:|-------------------|
+| <img src="https://lorydima.github.io/MyFinance/MyFInance_README01.png" width="600"> |**GUI Screenshot**|
 | <img src="https://lorydima.github.io/MyFinance/MyFInance_README02.png" width="600"> | **Graph functions:** This function allows you to generate visual charts of your balance over time, helping you analyze your financial growth and spending patterns. |
 | <img src="https://lorydima.github.io/MyFinance/MyFinance_README03.png" width="600"> | **Transaction table:** This function displays a full historical record of your incomes and expenses in an organized table, allowing for easy data management and review. |
 
@@ -56,11 +54,6 @@ Assets (icons and data files) are stored inside so the application can find them
 
 **About the docs/ folder:**
 The docs/ folder contains files used for the source code of website. It is not required to run the application locally.
-
-# 🌐 MyFinance Website
-
-<img src="https://github.com/user-attachments/assets/4a77bc29-1c68-4069-beb4-141631ab5b19" alt="MindCLI_Website_Img" width="1200">
-You can access the MindCLI Website from this link: <a href="https://lorydima.github.io/MyFinance" target="_blank">MyFinance Website</a>
 
 # 💾Downolad MyFinance
 
