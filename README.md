@@ -17,11 +17,12 @@
 <br>
 <p align="center"><strong>GUI App for finance managment</strong></p>
 
+https://github.com/user-attachments/assets/609b535c-5e7d-4336-8034-67c8e6f1dfa4
+
 # 🎲 Features
 
 | Img | Feature Description |
 |:---:|-------------------|
-| <img src="https://lorydima.github.io/MyFinance/MyFInance_README01.png" width="600"> |**GUI Screenshot**|
 | <img src="https://lorydima.github.io/MyFinance/MyFInance_README02.png" width="600"> | **Graph functions:** This function allows you to generate visual charts of your balance over time, helping you analyze your financial growth and spending patterns. |
 | <img src="https://lorydima.github.io/MyFinance/MyFinance_README03.png" width="600"> | **Transaction table:** This function displays a full historical record of your incomes and expenses in an organized table, allowing for easy data management and review. |
 
